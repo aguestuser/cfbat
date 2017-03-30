@@ -1,5 +1,5 @@
 (ns the-divine-cheese-code.core
-  (:use [clojure.repl])
+    ;(:use [clojure.repl])
   ;; (:use [the-divine-cheese-code.visualization.svg :as svg :only [points]])
   (:require [the-divine-cheese-code.visualization.svg :as svg :only [points]])
   (:gen-class))
