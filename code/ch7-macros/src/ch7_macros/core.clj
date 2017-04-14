@@ -60,3 +60,18 @@
   [to-validate message-validator-pairs]
   (map first (filter #(not ((second %) to-validate))
                      (partition 2 message-validator-pairs))))
+
+(and true (and true false))
+
+(defn expensive-func [foo]
+  (do
+    (Thread/sleep 1000)
+    (println "bar")
+    true))
+
+(defn expensive-add-func [foo]
+  (do
+    (Thread/sleep 1000)
+    (println "bar")
+    1))
+(and false (expensive-func "foo"))
